@@ -85,24 +85,3 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
-## How I Would Explain This Project in an Interview
-
-> I built a small 3D arcade game in Panda3D to demonstrate the fundamentals of a real-time game loop. The project uses Panda3D's `ShowBase` as the application base, NodePaths for scene graph organization, task-based updates for frame-by-frame logic, DirectGUI text for the HUD, and procedural geometry so the project does not depend on external assets.
->
-> The core gameplay loop is simple: the player moves a courier ship, collects data capsules, avoids debris, and survives as the world speed increases. I separated the project into modules: constants for tunable game values, a mesh factory for procedural models, entities for moving objects, UI for screen text, and the main game class for state management.
->
-> I also implemented basic difficulty scaling, collision checks, restart/pause states, and visual feedback when the player takes damage. The goal was not to make a huge game, but to show that I understand how to structure an interactive 3D application in Panda3D.
-
-## Possible Improvements
-
-- Add sound effects and background music
-- Add a main menu with difficulty selection
-- Add particle effects for collection and damage
-- Add high-score saving with a local JSON file
-- Replace procedural shapes with custom 3D models
-- Add Panda3D collision solids as an alternative to radius-based collisions
-
-## License
-
-This project is released under the MIT License.
